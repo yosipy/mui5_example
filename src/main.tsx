@@ -1,9 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import "./index.css"
 import App from "./App"
 import { TopPage } from "@/pages/TopPage/TopPage"
+import { TwoColumnPage } from "./pages/layout/TwoColumnPage/TwoColumnPage"
 
 const router = createBrowserRouter(
   [
@@ -14,6 +14,10 @@ const router = createBrowserRouter(
     {
       path: "/app",
       element: <App />,
+    },
+    {
+      path: "/layout/two_column",
+      element: <TwoColumnPage />,
     },
   ],
   // For Github Pages

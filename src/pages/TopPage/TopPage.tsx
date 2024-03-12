@@ -7,7 +7,13 @@ export const TopPage = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/app">app</Link>
+            <Link to="/">Top</Link>
+          </li>
+          <li>
+            <Link to="/app">App</Link>
+          </li>
+          <li>
+            <Link to="/layout/two_column">TwoColumnPage</Link>
           </li>
         </ul>
       </nav>
