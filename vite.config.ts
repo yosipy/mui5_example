@@ -7,4 +7,5 @@ export default defineConfig({
     alias: [{ find: "@/", replacement: `${__dirname}/src/` }],
   },
   plugins: [react()],
+  base: process.env.GITHUB_PAGES ? "/mui5_example" : "/",
 })

@@ -5,16 +5,20 @@ import "./index.css"
 import App from "./App"
 import { TopPage } from "@/pages/TopPage/TopPage"
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <TopPage />,
-  },
-  {
-    path: "/app",
-    element: <App />,
-  },
-])
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <TopPage />,
+    },
+    {
+      path: "/app",
+      element: <App />,
+    },
+  ],
+  // For Github Pages
+  { basename: import.meta.env.DEV ? "/" : "/mui5_example/" }
+)
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
